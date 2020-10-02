@@ -1,15 +1,15 @@
-//including header files
+//Including Header Files
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 #include<conio.h>
 
 //--------------------------------------------------------------------------------------------------------------------
-//global variables declaration
+//Global Variables Declaration
 int i,j,main_exit;
 
 
-//functions declaration
+//Functions Declaration
 void new_records();
 void update_records();
 void view_records();
@@ -20,7 +20,7 @@ void close();
 
 //--------------------------------------------------------------------------------------------------------------------
 
-//defining structures
+//Defining Structures
 
 struct date
 {
@@ -51,7 +51,7 @@ int main()
     return 0;
 }
 //--------------------------------------------------------------------------------------------------------------------
-//login page
+//Login Page
 
 int login(void)
 {
@@ -85,13 +85,13 @@ int login(void)
 
 		if(strcmp(u_name,admin)==0 && strcmp(p_word,password)==0)
 	{
-	printf("  \n\n\n       WELCOME !!!! LOGIN SUCCESSFULLY\n");
+	printf("  \n\n\n       WELCOME !!!! LOGIN SUCCESSFULLY...\n");
 	system("PAUSE");
 	break;
 	}
 	else
 	{
-		printf("\n        SORRY !!!!  WRONG USERNAME OR PASSWORD\n");
+		printf("\n        SORRY !!!!  WRONG USERNAME OR PASSWORD...\n");
 		system("PAUSE");
 		a++;
 
@@ -111,7 +111,7 @@ int login(void)
 }
 
 //--------------------------------------------------------------------------------------------------------------------
-//main menu
+//Main Menu
 
 
 void main_menu()
@@ -149,7 +149,7 @@ void main_menu()
 
 //------------------------------------------------------------------------------------------------------------------
 
-//new entry function
+//New Entry Function
 void new_records()
 {
     system("CLS");
@@ -254,7 +254,7 @@ void new_records()
 
 //--------------------------------------------------------------------------------------------------------------------
 
-//function to update student info
+//Function To Update Student Info
 
 void update_records()
 {
@@ -353,7 +353,7 @@ void update_records()
 }
 //--------------------------------------------------------------------------------------------------------------------
 
-//function to display all students of a hostel
+//Function To Display All Students Of a Hostel
 
 void view_records()
 {
@@ -411,7 +411,7 @@ void view_records()
 
 //------------------------------------------------------------------------------------------------------------------
 
-//function to view all data of a particular student
+//Function To View All Data Of A Particular Student
 
 void view_stu_rec()
 {
@@ -469,7 +469,7 @@ void view_stu_rec()
 
 //------------------------------------------------------------------------------------------------------------------
 
-//function to delete records
+//Function To Delete records
 void remove_records()
 {
 	system("CLS");
@@ -517,7 +517,7 @@ void remove_records()
 		}
 }
 //------------------------------------------------------------------------------------------------------------------
-//about function
+//About Function
 void about()
 {
     system("CLS");
@@ -525,7 +525,7 @@ void about()
     getch();
 }
 //------------------------------------------------------------------------------------------------------------------
-// close function & print greeting
+// Close Function & Print Greeting
 void close()
 {
 	system("CLS");
